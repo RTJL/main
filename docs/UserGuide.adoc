@@ -42,7 +42,8 @@ Type the command in the command box and press kbd:[Enter] to execute it. +
 e.g. typing *`help`* and pressing kbd:[Enter] will open the help window. +
 
 Some example commands you can try:
-* **: `register user/max33 pass/#Qwerty4321 n/Max Verstappen enroll/15/03/2015 maj/CS maj/DA min/BA min/MA`
+
+* **`register`**`user/max33 pass/#Qwerty4321 n/Max Verstappen enroll/15/03/2015 maj/CS maj/DA min/BA min/MA`
  : creates a new student account
 * **`addModuleS`**`CS2103T` : adds the module CS2103T to the staged modules configuration
 * **`removeModuleS`**`CS2103T` : removes the module CS2103T to the staged module configuration
@@ -479,13 +480,13 @@ Creates a new administrator account with the following stated details.
 === Edit the currently logged in administrator account: `editAdmin`
 
 Edit the details of the currently logged in administrator. +
-Format: `editAdmin OPTION/INPUT...` +
+Format: `editAdmin <OPTION/INPUT...>` +
 
 Input fields:
 
-* Name : `n/[NAME]` -- It should contain only alphanumeric characters and spaces and should not be blank.
-* Salary : `salary/[SALARY]` -- It should contain only integers.
-* Employment date : `employ/[EMPLOYMENT_DATE]` -- it should be in the format DD/MM/YYYY
+* Name : `n/<NAME>` -- It should contain only alphanumeric characters and spaces and should not be blank.
+* Salary : `salary/<SALARY>` -- It should contain only integers.
+* Employment date : `employ/<EMPLOYMENT_DATE>` -- it should be in the format DD/MM/YYYY
 
 Examples:
 
@@ -610,15 +611,16 @@ image::RemoveModuleFromDatabaseCommandExample.png[width="700"]
 * *Add to Staged*: `addModuleS <MOD_CODE> [MORE_MOD_CODES]`
 * *Add to Taken*: `addModuleT <MOD_CODE> [MORE_MOD_CODES]`
 * *Delete from Staged*: `removeModuleS <MOD_CODE> [MORE_MOD_CODES]`
-* *Deleter from Taken*: `removeModuleT <MOD_CODE> [MORE_MOD_CODES]`
+* *Delete from Taken*: `removeModuleT <MOD_CODE> [MORE_MOD_CODES]`
 * *Search* : `search <KEYWORD> [MORE_KEYWORDS]`
-* *Save* : `save sp/[FILE_NAME]`
+* *Save* : `save sp/<FILE_NAME>`
 * *Generate Schedule* : `generate`
-* *Login* : `login user/[USERNAME] pass/[PASSWORD] userData/[PATH_TO_DATA_FILE]`
-* *Register* : `register user/[USERNAME] pass/[PASSWORD] n/[NAME] enroll/[ENROLLMENT_DATE] maj/[MAJOR_CODE] min/[MINOR_CODE]`
-* *Edit Student* : `edit [OPTION]/[INPUT]...`
+* *Login* : `login user/<USERNAME> pass/<PASSWORD> userData/<PATH_TO_DATA_FILE>`
+* *Register* : `register user/<USERNAME> pass/<PASSWORD> n/<NAME> enroll/<ENROLLMENT_DATE> maj/<MAJOR_CODE>
+ min/[MINOR_CODE]`
+* *Edit Student* : `edit <OPTION>/[INPUT]...`
 * *Add Admin* : `addAdmin user/<USERNAME> pass/<PASSWORD> n/<NAME> sp/<SAVE_PATH> salary/<SALARY> date/<EMPLOYMENT_DATE>`
-* *Edit Admin* : `editAdmin n/[NAME] salary/[SALARY] date/[EMPLOYMENT_DATE]`
+* *Edit Admin* : `editAdmin [n/<NAME>] [salary/<SALARY>] [date/<EMPLOYMENT_DATE>]`
 * *Remove User* : `removeUser <USERNAME>`
 * *Show Usernames* : `showUser`
 * *Add Module to Database* : `addModuleDB code/<MODULE_CODE> department/<DEPARTMENT> title/<TITLE> credit/<CREDIT>
