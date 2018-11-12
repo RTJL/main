@@ -1658,6 +1658,10 @@ Use case ends.
 [[cli]] CLI::
 CLI is an acronym for Command Line Interface. It is a text-based interface which facilitates interaction between the user and the software.
 
+[[gui]] GUI::
+GUI is an acronym for Graphical User Interface. It is a graphical interface which facilitates interaction
+between the user and the software using visual elements.
+
 [[mainstream-os]] Mainstream OS::
 Windows, Linux, Unix, OS-X
 

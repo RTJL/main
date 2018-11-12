@@ -494,15 +494,15 @@ Change the name of the logged in administrator to "john".
 * `editAdmin salary/3000 employ/01/01/2018`
 Change both the salary and employement date of the logged in administrator to "3000" and "01/01/2018" respectively.
 
-=== Remove a existing user account: `removeUser`
+=== Remove a user account: `removeUser`
 
 Remove a currently existing user account. +
-Format: `removeAdmin <USERNAME>`
+Format: `removeUser <USERNAME>`
 
 Example:
 
-* `removeAdmin Username` +
-Removes a administrator account with username "Username" if it exists.
+* `removeUser Username` +
+Removes a user account with username "Username" if it exists.
 
 === Show the list of usernames: `showUser`
 
